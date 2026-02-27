@@ -591,6 +591,10 @@ module Danbooru
     def plurk_session_cookie
     end
 
+    # Your Reddit "reddit_session" cookie
+    def reddit_session_cookie
+    end
+
     # Your Xiaohongshu "gid" cookie. Login to Xiaohongshu then use the devtools to find the "gid" cookie.
     def xiaohongshu_session_cookie
     end
@@ -628,15 +632,15 @@ module Danbooru
     # A list of tags that should be removed when a post is replaced. Regexes allowed.
     def post_replacement_tag_removals
       %w[replaceme .*_sample resized upscaled downscaled md5_mismatch
-      jpeg_artifacts corrupted_image missing_image missing_sample missing_thumbnail
-      resolution_mismatch source_larger source_smaller source_request non-web_source]
+         jpeg_artifacts corrupted_image missing_image missing_sample missing_thumbnail
+         resolution_mismatch source_larger source_smaller source_request non-web_source]
     end
 
     # Posts with these tags will be highlighted in the modqueue.
     def modqueue_warning_tags
       %w[ai-generated ai-assisted anime_screenshot game_screenshot bad_source duplicate
-      hard-translated image_sample md5_mismatch nude_filter off-topic paid_reward resized
-      third-party_edit]
+         hard-translated image_sample md5_mismatch nude_filter off-topic paid_reward resized
+         third-party_edit]
     end
 
     # Whether the Gold account upgrade page should be enabled.
